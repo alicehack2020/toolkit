@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
  import "../components/ProductsPage.css"
 
 const Cart = () => {
