@@ -5,9 +5,11 @@ import "../components/ProductsPage.css"
 const Cart = () => {
     const dispatch = useDispatch();
     const products = useSelector((state:any) => state.cart);
-    const handleRemove = (productId:any) => {
-        dispatch(remove(productId));
-    };
+    // const handleRemove = (productId:any) => {
+      
+    //     dispatch(remove(productId));
+       
+    // };
 
     return (
         <div>
@@ -18,11 +20,11 @@ const Cart = () => {
                          <img src={product.avatar} alt="" />
                         <h4>{product.name}</h4>
                         <h5>price:{product.price}</h5>
-                        <button
+                        {/* <button
                             className="btn"
-                            onClick={() => handleRemove(product.id)}>
-                            Remove
-                        </button>
+                            onClick={() => handleRemove(product._id)}>
+                            
+                        </button> */}
                     </div>
                 ))}
             </div>
